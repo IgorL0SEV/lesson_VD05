@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Достопримечательности{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <h1>Достопримечательности</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Главная</a></li>
+                <li><a href="{{ url_for('about_1') }}">О первом объекте</a></li>
+                <li><a href="{{ url_for('about_2') }}">О втором объекте</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основной контент -->
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <p>Контакты: +375 29 134 99 99, igor.v.losev@gmail.com</p>
+        <p>Следите за нами в соцсетях: <a href="#">Facebook</a>, <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
+

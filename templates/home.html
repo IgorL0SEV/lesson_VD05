@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<h2>Достопримечательности</h2>
+<div class="card-container">
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/obj1.jpg') }}" alt="Объект 1">
+        <h3>Объект 1</h3>
+        <p>Краткое описание объекта 1. Подробнее о <a href="{{ url_for('about_1') }}">первом объекте</a>.</p>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/obj2.jpg') }}" alt="Объект 2">
+        <h3>Объект 2</h3>
+        <p>Краткое описание объекта 2. Подробнее о <a href="{{ url_for('about_2') }}">втором объекте</a>.</p>
+    </div>
+</div>
+{% endblock %}
+

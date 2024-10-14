@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}О втором объекте{% endblock %}
+
+{% block content %}
+<h2>Второй объект</h2>
+<img src="{{ url_for('static', filename='images/obj2.jpg') }}" alt="Объект 2">
+<p>Здесь содержится подробная информация о втором объекте.</p>
+<a href="{{ url_for('home') }}">Вернуться на главную</a>
+{% endblock %}
+
