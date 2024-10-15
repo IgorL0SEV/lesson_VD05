@@ -14,6 +14,10 @@ def about_1():
 def about_2():
     return render_template('about_2.html')
 
+@app.route('/about_3')
+def about_3():
+    return render_template('about_3.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 

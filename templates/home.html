@@ -3,17 +3,22 @@
 {% block title %}Главная{% endblock %}
 
 {% block content %}
-<h2>Достопримечательности</h2>
+<h2>Достопримечательности Беларуси</h2>
 <div class="card-container">
     <div class="card">
-        <img src="{{ url_for('static', filename='images/obj1.jpg') }}" alt="Объект 1">
-        <h3>Объект 1</h3>
-        <p>Краткое описание объекта 1. Подробнее о <a href="{{ url_for('about_1') }}">первом объекте</a>.</p>
+        <img src="{{ url_for('static', filename='images/brest_krepost.jpg') }}" alt="Объект 1" style="max-width: 40%; height: auto; margin-bottom: 5px;">
+        <h3>Брестская крепость</h3>
+        <p>Мемориальный комплекс "Брестская крепость-герой".<br><br>Подробнее о <a href="{{ url_for('about_1') }}">Брестской крепости</a>.</p>
     </div>
     <div class="card">
-        <img src="{{ url_for('static', filename='images/obj2.jpg') }}" alt="Объект 2">
-        <h3>Объект 2</h3>
-        <p>Краткое описание объекта 2. Подробнее о <a href="{{ url_for('about_2') }}">втором объекте</a>.</p>
+        <img src="{{ url_for('static', filename='images/mirskij_zamok.jpg') }}" alt="Объект 2" style="max-width: 40%; height: auto; margin-bottom: 5px;">
+        <h3>Мирский замок</h3>
+        <p>За́мково-па́рковый ко́мплекс «Мир».<br><br>Подробнее о <a href="{{ url_for('about_2') }}">Мирском замке</a>.</p>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='images/Nesvigskij_zamok.jpg') }}" alt="Объект 3" style="max-width: 40%; height: auto; margin-bottom: 5px;">
+        <h3>Несвижский замок</h3>
+        <p>Дворцово-замковый комплекс в Несвиже.<br><br>Подробнее о <a href="{{ url_for('about_3') }}">Несвижском замке</a>.</p>
     </div>
 </div>
 {% endblock %}
